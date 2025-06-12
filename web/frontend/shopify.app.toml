@@ -1,0 +1,3 @@
+[web]
+command = "npm run dev"
+path = "web/frontend"

@@ -1,0 +1,25 @@
+client_id = "45b1f741ae189ee14ffc633585153025"
+name = "alex-dev-test"
+handle = "alex-dev-test"
+application_url = "https://signature-entire-outlets-hobbies.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-04"
+
+[access_scopes]
+scopes = "read_products,write_products"
+
+[auth]
+redirect_urls = [
+  "https://signature-entire-outlets-hobbies.trycloudflare.com",
+  "https://signature-entire-outlets-hobbies.trycloudflare.com/auth/callback",
+  "https://signature-entire-outlets-hobbies.trycloudflare.com/auth/shopify/callback"
+]
+
+[pos]
+embedded = false
